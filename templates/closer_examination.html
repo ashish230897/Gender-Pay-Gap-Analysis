@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head> 
+    <style>
+        body {
+            background-color: rgb(225, 245, 252);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic_data_analysis.html">Generic Data Analysis</a></li>
+                <li><a href="closer_examination.html">Closer Examination</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div style="padding-bottom: 80px;">
+        <br>
+        <p style="padding-left: 20%; padding-right: 20%; font-size:25px">
+            Here, lets take a closer look to see if we find any interesting patterns 👀 
+        </p>
+
+        <div style="height: 500px;">
+            <iframe src="bachelors_degree.html" height="90%" width="50%" frameborder="0" style="padding-left: 15%; float: left;"></iframe>
+            <p style="padding-left: 20%; padding-right: 15%; font-size:18px; text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus urna, vehicula tempus tincidunt id, 
+                accumsan suscipit enim. Aliquam sed nulla sollicitudin, congue urna vel, varius est. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Nullam eu nunc leo. Proin a tempor odio. Phasellus pellentesque dolor at orci pharetra 
+                cursus. Phasellus mattis ultricies nulla ullamcorper vulputate. Donec sapien leo, convallis sit amet elit id, 
+                consequat mollis lacus. Integer eget orci convallis augue ornare condimentum eu ut eros. Duis iaculis a lorem id 
+                maximus.
+            </p>
+        </div>
+
+        <div style="height: 400px; padding-bottom: 10px;">
+            <img style=" width: 50%; height: 95%; padding-right: 13%; padding-left: 2%; padding-bottom: 10px; float: right;" src="{{ url_for('static', filename='doc.png') }}">
+            <p style="padding-left: 10%; padding-right: 15%; font-size:18px; text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus urna, vehicula tempus tincidunt id, 
+                accumsan suscipit enim. Aliquam sed nulla sollicitudin, congue urna vel, varius est. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Nullam eu nunc leo. Proin a tempor odio. Phasellus pellentesque dolor at orci pharetra 
+                cursus. Phasellus mattis ultricies nulla ullamcorper vulputate. Donec sapien leo, convallis sit amet elit id, 
+                consequat mollis lacus. Integer eget orci convallis augue ornare condimentum eu ut eros. Duis iaculis a lorem id 
+                maximus.
+            </p>
+        </div>
+
+        <div style="height: 500px; padding-bottom: 10px;">
+            <img style=" width: 70%; height: 95%; padding-right: 13%; padding-left: 15%; padding-bottom: 10px;" src="{{ url_for('static', filename='masters.png') }}">
+            <p style="padding-left: 10%; padding-right: 10%; font-size:18px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus urna, vehicula tempus tincidunt id, 
+                accumsan suscipit enim. Aliquam sed nulla sollicitudin, congue urna vel, varius est. Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Nullam eu nunc leo. Proin a tempor odio. Phasellus pellentesque dolor at orci pharetra 
+                cursus. Phasellus mattis ultricies nulla ullamcorper vulputate. Donec sapien leo, convallis sit amet elit id, 
+                consequat mollis lacus. Integer eget orci convallis augue ornare condimentum eu ut eros. Duis iaculis a lorem id 
+                maximus.
+            </p>
+        </div>
+        
+        <div style="height:200px"></div>
+
+    </div>
+
+    <footer>
+        <div id="contact-me" style="font-size: 120%;">
+            <a href="https://twitter.com/AshishSunilAgr1" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/ashish-agrawal-784a53115/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/_ashishagrawal__/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://github.com/ashish230897" target="_blank" class="fa fa-github"></a>
+        </div>
+        <p>Copyright &#169 Ashish Agrawal 2022</p>
+    </footer>
+
+</body>
+
+</html>
