@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="{{ url_for('static',filename='script.js') }}"></script>
+
+<head> 
+    <style>
+        body {
+            background-color: rgb(225, 245, 252);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic_data_analysis.html">Generic Data Analysis</a></li>
+                <li><a href="closer_examination.html">Closer Examination</a></li>
+                <li><a href="playground.html">Playground</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div style="padding-bottom: 80px;">
+        <br>
+        <p style="padding-left: 20%; padding-right: 20%; font-size:25px">
+            Let's play with the data a bit 🥁 <br>
+            Below you can fill the data in the entries and look for yourself the salary you will earn according to our unbiased model 🚀 
+        </p>
+
+        <div id="genderBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose a Gender from this list:
+                <input id="genders" list="myGender" name="myGender" /></label>
+                <datalist id="myGender">
+                  <option value="Male">
+                  <option value="Female">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+        
+        <div id="ageBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Enter your age:
+                <input id="age" type="" name="age" class="age" required></label>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="countryBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose a Country from this list:
+                <input id="country" list="country_" name="myCountry" /></label>
+                <datalist id="country_">
+                    <option value="Africa">
+                    <option value="Asia">
+                    <option value="China">
+                    <option value="Europe">
+                    <option value="India">
+                    <option value="Middle East">
+                    <option value="North America">
+                    <option value="Ocenia">
+                    <option value="Russia">
+                    <option value="South America">
+                    <option value="USA">
+                    <option value="dna">
+                    <option value="Other">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="educationBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose your highest level of education from this list:
+                <input id="education" list="education_" name="myEducation" /></label>
+                <datalist id="education_">
+                    <option value="Bachelor’s degree">
+                    <option value="Doctoral degree">
+                    <option value="Master’s degree">
+                    <option value="Professional degree">
+                    <option value="Some college/university study without earning a bachelor’s degree">
+                    <option value="No formal education past high school">
+                    <option value="I prefer not to answer">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="majorBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose your Major field of study from this list:
+                <input id="major" list="major_" name="myMajor" /></label>
+                <datalist id="major_">
+                    <option value="A business discipline (accounting, economics, finance, etc.)">
+                    <option value="Computer science (software engineering, etc.)">
+                    <option value="Engineering (non-computer focused)">
+                    <option value="Environmental science or geology">
+                    <option value="Fine arts or performing arts">
+                    <option value="Humanities (history, literature, philosophy, etc.)">
+                    <option value="I never declared a major">
+                    <option value="Information technology, networking, or system administration">
+                    <option value="Mathematics or statistics">
+                    <option value="Medical or life sciences (biology, chemistry, medicine, etc.)">
+                    <option value="Physics or astronomy">
+                    <option value="Social sciences (anthropology, psychology, sociology, etc.)">
+                    <option value="Other">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="professionBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose your Profession from this list:
+                <input id="profession" list="profession_" name="myProfession" /></label>
+                <datalist id="profession_">
+                    <option value="Business Analyst">
+                    <option value="Chief Officer">
+                    <option value="Consultant">
+                    <option value="DBA/Database Engineer">
+                    <option value="Data Analyst">
+                    <option value="Data Engineer">
+                    <option value="Data Journalist">
+                    <option value="Data Scientist">
+                    <option value="Developer Advocate">
+                    <option value="Manager">
+                    <option value="Marketing Analyst">
+                    <option value="Principal Investigator">
+                    <option value="Product/Project Manager">
+                    <option value="Research Assistant">
+                    <option value="Research Scientist">
+                    <option value="Software Engineer">
+                    <option value="Student">    
+                    <option value="Other">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="industryBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Choose the Industry you work in from this list:
+                <input id="industry" list="industry_" name="myIndustry" /></label>
+                <datalist id="industry_">
+                    <option value="Academics/Education">
+                    <option value="Accounting/Finance">
+                    <option value="Broadcasting/Communications">
+                    <option value="Computers/Technology">
+                    <option value="Energy/Mining">
+                    <option value="Government/Public Service">
+                    <option value="Hospitality/Entertainment/Sports">
+                    <option value="Developer Advocate">
+                    <option value="Insurance/Risk Assessment">
+                    <option value="Manufacturing/Fabrication">
+                    <option value="Marketing/CRM">
+                    <option value="Medical/Pharmaceutical">
+                    <option value="Military/Security/Defense">
+                    <option value="Online Business/Internet-based Sales">
+                    <option value="Online Service/Internet-based Services">
+                    <option value="Retail/Sales">
+                    <option value="Shipping/Transportation">        
+                    <option value="Other">
+                </datalist>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="experienceBlock" style="padding-left: 20%; font-size: 25px;">
+            <label>Enter your experience:
+                <input id="experience" type="" name="experience" class="experience" required></label>
+            <!-- <input id="Gender" type="" name="text" class="text" required> -->
+        </div>
+
+        <div id="buttonBlock" style="padding-left: 20%; font-size: 25px; padding-top: 2%;">
+            <button onclick="predict()" id="button">Predict</button>
+        </div>
+
+        <div id="result" style="padding-left: 20%; font-size: 25px;">
+        </div>
+
+        <div style="height:200px"></div>
+
+    </div>
+
+    <footer>
+        <div id="contact-me" style="font-size: 120%;">
+            <a href="https://twitter.com/AshishSunilAgr1" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/ashish-agrawal-784a53115/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/_ashishagrawal__/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://github.com/ashish230897" target="_blank" class="fa fa-github"></a>
+        </div>
+        <p>Copyright &#169 Ashish Agrawal 2022</p>
+    </footer>
+
+</body>
+
+</html>

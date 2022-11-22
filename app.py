@@ -7,10 +7,13 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/')
 @app.route('/generic_data_analysis.html')
 def generic():
     return render_template('generic_data_analysis.html')
+
+@app.route('/playground.html')
+def playground():
+    return render_template('playground.html')
 
 @app.route('/male-female-dist.html')
 def male_female_age_dist():
@@ -37,4 +40,5 @@ def closer_examination():
     return render_template('closer_examination.html')
 
 if __name__ == '__main__':
+   app.config["CACHE_TYPE"] = "null"
    app.run()
